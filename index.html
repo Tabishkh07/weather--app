@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<body class="night">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <i class="fa-solid fa-cloud-sun"></i>
+      <span class="app-title">Weather</span>
+    </div>
+
+    <div class="navbar-right">
+      <i class="fa-regular fa-moon"></i>
+    </div>
+  </nav>
+
+  <!-- ================= MAIN APP ================= -->
+  <main class="app">
+
+    <!-- -------- Search Bar -------- -->
+    <header class="search-container">
+      <form class="search-form">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search city"
+        />
+      </form>
+    </header>
+
+    <!-- -------- Main Weather Card -------- -->
+    <section class="weather-card">
+
+      <div class="weather-left">
+        <h2 class="city">Paris</h2>
+        <p class="country">France</p>
+
+        <h1 class="temperature">22°C</h1>
+        <p class="condition">Sunny</p>
+        <p class="feels-like">Feels like 21°C</p>
+      </div>
+
+      <div class="weather-right">
+        <span class="weather-icon">☀️</span>
+      </div>
+
+    </section>
+
+    <!-- -------- Other Weather Info -------- -->
+    <section class="details-grid">
+
+      <div class="detail-card">
+        <span class="detail-icon">💧</span>
+        <p class="detail-value">40%</p>
+        <p class="detail-label">Humidity</p>
+      </div>
+
+      <div class="detail-card">
+        <span class="detail-icon">🌬️</span>
+        <p class="detail-value">14 km/h</p>
+        <p class="detail-label">Wind</p>
+      </div>
+
+      <div class="detail-card">
+        <span class="detail-icon">🧭</span>
+        <p class="detail-value">1010 hPa</p>
+        <p class="detail-label">Pressure</p>
+      </div>
+
+      <div class="detail-card">
+        <span class="detail-icon">👁️</span>
+        <p class="detail-value">10 km</p>
+        <p class="detail-label">Visibility</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+  <p>Built by Tabish</p>
+</footer>
+
+<!-- JS (empty for now) -->
+<script src="script.js" defer></script>
+
+</body>
+</html>
