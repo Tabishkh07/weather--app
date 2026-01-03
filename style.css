@@ -222,3 +222,8 @@ body.night .search-input {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.weather-icon {
+  width: 90px;
+  height: 90px;
+  display: block;
+}
